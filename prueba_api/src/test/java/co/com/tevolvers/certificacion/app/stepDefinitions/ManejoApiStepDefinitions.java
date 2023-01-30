@@ -30,11 +30,6 @@ public class ManejoApiStepDefinitions {
         OnStage.theActorInTheSpotlight().whoCan(CallAnApi.at(URL));
     }
 
-    @Cuando("^el usuario obtiene todos los bookingId$")
-    public void ElUsuarioObtieneTodosLosBookingId() {
-        OnStage.theActorInTheSpotlight().attemptsTo(ObtenerTodosLosIds.traer());
-    }
-
     @Entonces("^el usuario vera el codigo de respuesta de (.*)$")
     public void ElUsuarioVeraElCodigoDeRespuestaDe(int estado) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidarEstado.respuesta(estado),Matchers.is(true)));

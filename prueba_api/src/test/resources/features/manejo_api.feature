@@ -6,10 +6,6 @@
     Antecedentes:
       Dado el servicio de restful booker https://restful-booker.herokuapp.com/
 
-    Escenario: se traen todos los Booking por bookingsid
-      Cuando el usuario obtiene todos los bookingId
-      Entonces el usuario vera el codigo de respuesta de 200
-
     Escenario: se valida la existencia de un booking por id
       Cuando el usuario obtiene el registro con el id 3
       Entonces el usuario vera el codigo de respuesta de 200
